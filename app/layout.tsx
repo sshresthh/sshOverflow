@@ -7,6 +7,7 @@ import {
 } from "@clerk/nextjs";
 import type { Metadata } from "next";
 // eslint-disable-next-line camelcase
+import { ThemeProvider } from "@/context/ThemeProvider";
 import { Inter, Space_Grotesk } from "next/font/google";
 import React from "react";
 import "./globals.css";
@@ -46,7 +47,7 @@ export default function RootLayout({
           <SignedIn>
             <UserButton />
           </SignedIn>
-          {children}
+          <ThemeProvider>{children}</ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
