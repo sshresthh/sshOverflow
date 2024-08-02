@@ -1,6 +1,6 @@
-const signup = () => {
+const SignUp = () => {
   return (
-	<div>signup</div>
+	<div>Signup</div>
   )
 }
-export default signup
+export default SignUp
